@@ -1,76 +1,169 @@
 .title {
-    font-family: Playfair Display;
-    font-size: 32px;
-    color: #607900;
-    padding-bottom: 24px;
-    padding-top: 40px;
+  font-family: Playfair Display;
+  font-size: 32px;
+  color: #607900;
+  padding-bottom: 24px;
+  padding-top: 40px;
+}
+
+.third__page {
+    padding-bottom: 100px;
 }
 
 .third__page-container {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  /* width: 92%; */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter;
 }
 
 .catalog {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .catalog-items-item {
-    font-size: 14px;
-    width: 140px;
-    min-height: 380px;
-    max-width: 310px;
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 45% 55%;
-    /* align-items: center; */
+  font-size: 14px;
+  width: 140px;
+  min-height: 380px;
+  max-width: 310px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 45% 55%;
+  /* align-items: center; */
 }
 
 .catalog-items-item-container {
+  padding-top: 16px;
+  padding-bottom: 12px;
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+}
+
+.delivery-time {
+  display: flex;
+  justify-content: left;
+  gap: 4px;
+  align-self: flex-end;
+  align-self: center;
+}
+
+.picture-product {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  grid-area: 1 / 1 / span 1 / 1;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.orange-button-cost {
+  background-color: #f0a35b;
+  font-family: Inter;
+  width: 100%;
+  height: 32px;
+  border-radius: 32px;
+  color: white;
+  border: none;
+  align-self: center;
+}
+
+.catalog-items {
+  width: 100%;
+  display: grid;
+  /* align-items: center; */
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(140px, auto));
+  gap: 24px 12px;
+  grid-auto-flow: row;
+  /* grid-template-rows: auto; */
+}
+
+.name-product {
+  height: 77px;
+}
+
+.delivery-buttom {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+@media (min-width: 768px) {
+  .name-product {
+    height: 77px;
+    margin-top: 16px;
+  }
+
+  .delivery-buttom {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .delivery-time {
+    font-size: 14px;
+    display: flex;
+    justify-content: left;
+    gap: 4px;
+    align-items: center;
+    align-self: center;
+  }
+
+  .orange-button-cost {
+    width: 120px;
+  }
+
+  .catalog-items-item {
+    font-size: 18px;
+    width: 310px;
+    height: 531px;
+    border-radius: 32px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 65% 36%;
+    /* align-items: center; */
+  }
+
+  .catalog-items-item-container {
     padding-top: 16px;
     padding-bottom: 12px;
     width: 90%;
     margin: 0 auto;
     display: grid;
-}
+  }
 
-.delivery-time {
-    padding-bottom: 16px;
-    display: flex;
-    justify-content: left;
-    gap: 4px;
-}
-
-.picture-product {
+  .picture-product {
     width: 100%;
     height: auto;
     object-fit: contain;
     grid-area: 1 / 1 / span 1 / 1;
-    border-radius: 20px 20px 0px 0px ;
-}
+    border-radius: 20px 20px 0px 0px;
+  }
 
+  .orange-button-cost {
+    height: 39px;
+  }
 
-.orange-button-cost {
-    background-color: #F0A35B;
-    font-family: Inter;
-    width: 100%;
-    height: 32px;
-    border-radius: 32px;
-    color: white;
-    border: none;
-}
-
-.catalog-items {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(1.125rem, 1fr));
+  .catalog-items {
+    grid-template-columns: repeat(auto-fit, minmax(310px, auto));
+    gap: 24px 12px;
     grid-auto-flow: row;
-    grid-auto-rows: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+    .title {
+        font-size: 50px;
+    }
 }

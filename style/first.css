@@ -18,15 +18,14 @@
     font-size: 1.125rem;
     font-style: italic;
     padding-bottom: 24px;
-
 }
+
 .flowwers-image {
     width: calc(100vw - (100vw / 100 * 8.75));
     height: calc(100vw - (100vw / 100 * 58.75));
     background-image: url('/image/flowwers-image.png');
     background-size: contain;
     background-repeat: no-repeat;
-    /* width: 100%; */
 }
 
 .delivery-time img {

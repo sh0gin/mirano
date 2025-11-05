@@ -1,182 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="index.css">
-</head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <section class="header__contain">
-            <section class="logo-basket">
-                <div class="header__contain-input input-top">
-                    <div class="conteiner__input">
-                        <input type="text" placeholder="Букет из роз">
-                        <div class="orange__buttun">
-                        </div>
-                    </div>
-                </div>
-                <div class="header__contain-logo">
-                </div>
-                <div class="header__contain-basket">
-                    <span class="header__contain-basket-count">3</span>
-                </div>
-            </section>
-            <section class="header__contain-input input-visible">
-                <div class="conteiner__input">
-                    <input type="text" placeholder="Букет из роз">
-                    <div class="orange__buttun">
-                    </div>
-                </div>
-            </section>
+      <section class="header__contain">
+        <section class="logo-basket">
+          <div class="header__contain-input input-top">
+            <div class="conteiner__input">
+              <input type="text" placeholder="Букет из роз" />
+              <div class="orange__buttun"></div>
+            </div>
+          </div>
+          <div class="header__contain-logo"></div>
+          <div class="header__contain-basket">
+            <span class="header__contain-basket-count">3</span>
+          </div>
         </section>
+        <section class="header__contain-input input-visible">
+          <div class="conteiner__input">
+            <input type="text" placeholder="Букет из роз" />
+            <div class="orange__buttun"></div>
+          </div>
+        </section>
+      </section>
     </header>
     <main>
-        <section class="first__page">
-            <h1>АВТОРСКИЕ БУКЕТЫ</h1>
-            <p class="regular-text">и подарки</p>
-            <div class="flowwers-image">
-            </div>
+      <section class="first__page">
+        <h1>АВТОРСКИЕ БУКЕТЫ</h1>
+        <p class="regular-text">и подарки</p>
+        <div class="flowwers-image"></div>
+      </section>
+      <section class="second__page">
+        <section class="filter">
+          <div class="filter-container">
+            <ul class="filter-ul">
+              <li class="filter-elem filter-elem-active">
+                <img src="/image/flowwers.png" alt="значок цветов" />
+                Цветы
+              </li>
+              <li class="filter-elem">
+                <img src="/image/tedy.png" alt="значок игрушек" />
+                Игрушки
+              </li>
+              <li class="filter-elem">
+                <img src="/image/letters.png" alt="значок открыток" />
+                Открытки
+              </li>
+            </ul>
+          </div>
         </section>
-        <section class="second__page">
-            <section class="filter">
-                <div class="filter-container">
-                    <ul class="filter-ul">
-                        <li class="filter-elem filter-elem-active">
-                            <img src="/image/flowwers.png" alt="значок цветов">
-                            Цветы
-                        </li>
-                        <li class="filter-elem">
-                            <img src="/image/tedy.png" alt="значок игрушек">
-                            Игрушки
-                        </li>
-                        <li class="filter-elem">
-                            <img src="/image/letters.png" alt="значок открыток">
-                            Открытки
-                        </li>
-                    </ul>
+        <section class="container__details">
+          <details>
+            <summary>Цена</summary>
+            <section class="block-price">
+              <div class="block-content-price">
+                <input type="text" value="от " />
+                <input type="text" value="до " />
+              </div>
+            </section>
+          </details>
+          <details>
+            <summary>Тип товара</summary>
+            <section class="block">
+              <div class="block-content">
+                <span>Монобукеты</span>
+                <span class="block-content-active">Авторские букеты</span>
+                <span>Цветы в коробке</span>
+                <span>Цветы в корзине</span>
+                <span>Букеты из сухоцветов</span>
+              </div>
+            </section>
+          </details>
+        </section>
+      </section>
+      <section class="third__page">
+        <div class="third__page-container">
+          <section class="catalog">
+            <p class="title">ЦВЕТЫ</p>
+            <section class="catalog-items">
+              <article class="catalog-items-item">
+                <!-- <div class="picture-product"> -->
+                <img
+                  class="picture-product"
+                  src="/image/pic.png"
+                  alt="букет цветов розовых"
+                />
+                <!-- </div> -->
+                <div class="catalog-items-item-container">
+                  <p class="name-product">
+                    Авторский букет из роз, диантусов и сухоцветов
+                  </p>
+                  <div class="delivery-buttom">
+                    <div class="delivery-time">
+                      <img src="/image/group.svg" alt="значок доставка" />
+                      <p>сегодня в 14:00</p>
+                    </div>
+                    <button class="orange-button-cost">3000 ₽</button>
+                  </div>
                 </div>
+              </article>
+              <article class="catalog-items-item">
+                <!-- <div class="picture-product"> -->
+                <img
+                  class="picture-product"
+                  src="/image/pic-1.png"
+                  alt="букет цветов розовых"
+                />
+                <!-- </div> -->
+                <div class="catalog-items-item-container">
+                  <p class="name-product">
+                    Авторский букет из роз, герберов, диантусов и сухоцветов
+                  </p>
+                  <div class="delivery-buttom">
+                    <div class="delivery-time">
+                      <img src="/image/group.svg" alt="значок доставка" />
+                      <p>сегодня в 14:00</p>
+                    </div>
+                    <button class="orange-button-cost">2000 ₽</button>
+                  </div>
+                </div>
+              </article>
+              <article class="catalog-items-item">
+                <!-- <div class="picture-product"> -->
+                <img
+                  class="picture-product"
+                  src="/image/pic-2.png"
+                  alt="букет цветов розовых"
+                />
+                <!-- </div> -->
+                <div class="catalog-items-item-container">
+                  <p class="name-product">
+                    Авторский букет из роз и сухоцветов
+                  </p>
+                  <div class="delivery-buttom">
+                    <div class="delivery-time">
+                      <img src="/image/group.svg" alt="значок доставка" />
+                      <p>сегодня в 14:00</p>
+                    </div>
+                    <button class="orange-button-cost">2200 ₽</button>
+                  </div>
+                </div>
+              </article>
+              <article class="catalog-items-item">
+                <!-- <div class="picture-product"> -->
+                <img
+                  class="picture-product"
+                  src="/image/pic-3.png"
+                  alt="букет цветов розовых"
+                />
+                <!-- </div> -->
+                <div class="catalog-items-item-container">
+                  <p class="name-product">Монобукет из тюльпан</p>
+                  <div class="delivery-buttom">
+                    <div class="delivery-time">
+                      <img src="/image/group.svg" alt="значок доставка" />
+                      <p>сегодня в 14:00</p>
+                    </div>
+                    <button class="orange-button-cost">1600 ₽</button>
+                  </div>
+                </div>
+              </article>
+              <article class="catalog-items-item">
+                <!-- <div class="picture-product"> -->
+                <img
+                  class="picture-product"
+                  src="/image/pic-4.png"
+                  alt="букет цветов розовых"
+                />
+                <!-- </div> -->
+                <div class="catalog-items-item-container">
+                  <p class="name-product">Авторский букет из роз и диантусов</p>
+                  <div class="delivery-buttom">
+                    <div class="delivery-time">
+                      <img src="/image/group.svg" alt="значок доставка" />
+                      <p>сегодня в 14:00</p>
+                    </div>
+                    <button class="orange-button-cost">2700 ₽</button>
+                  </div>
+                </div>
+              </article>
+              <article class="catalog-items-item">
+                <!-- <div class="picture-product"> -->
+                <img
+                  class="picture-product"
+                  src="/image/pic-5.png"
+                  alt="букет цветов розовых"
+                />
+                <!-- </div> -->
+                <div class="catalog-items-item-container">
+                  <p class="name-product">Монобукет из сухоцветов</p>
+                  <div class="delivery-buttom">
+                    <div class="delivery-time">
+                      <img src="/image/group.svg" alt="значок доставка" />
+                      <p>сегодня в 14:00</p>
+                    </div>
+                    <button class="orange-button-cost">1500 ₽</button>
+                  </div>
+                </div>
+              </article>
             </section>
-            <section class="container__details">
-                <details>
-                    <summary>Цена</summary>
-                    <section class="block-price">
-                        <div class="block-content-price">
-                            <input type="text" value="от ">
-                            <input type="text" value="до ">
-                        </div>
-                    </section>
-                </details>
-                <details>
-                    <summary>Тип товара</summary>
-                    <section class="block">
-                        <div class="block-content">
-                            <span>Монобукеты</span>
-                            <span class="block-content-active">Авторские букеты</span>
-                            <span>Цветы в коробке</span>
-                            <span>Цветы в корзине</span>
-                            <span>Букеты из сухоцветов</span>
-                        </div>
-                    </section>
-                </details>
+            <section class="fourth__page">
+              <div class="fourth__page-container">
+                <p>ПОДПИШИСЬ НА РАССЫЛКУ</p>
+                <div class="conteiner__input">
+                  <input class="input__mail" type="text" placeholder="E-mail" />
+
+                  <div class="orange__buttun-mail"></div>
+                </div>
+              </div>
+              <div class="fourth__page-img">
+                <!-- <button><img src="image/btn.svg" alt="" /></button> -->
+              </div>
             </section>
-        </section>
-        <section class="third__page">
-            <div class="third__page-container">
-                <section class="catalog">
-                    <p class="title">ЦВЕТЫ</p>
-                    <section class="catalog-items">
-                        <article class="catalog-items-item">
-                            <!-- <div class="picture-product"> -->
-                                <img class="picture-product" src="/image/pic.png" alt="букет цветов розовых">
-                            <!-- </div> -->
-                            <div class="catalog-items-item-container">
-                                <p> Авторский букет из роз, диантусов и сухоцветов</p>
-                                <div class="delivery-time">
-                                    <img src="/image/group.svg" alt="значок доставка">
-                                    <p>сегодня в 14:00</p>
-                                </div>
-                                <button class="orange-button-cost">3000 ₽</button>
-                            </div>
-                        </article>
-                        <article class="catalog-items-item">
-                            <!-- <div class="picture-product"> -->
-                                <img class="picture-product" src="/image/pic.png" alt="букет цветов розовых">
-                            <!-- </div> -->
-                            <div class="catalog-items-item-container">
-                                <p> Авторский букет из роз, диантусов и сухоцветов</p>
-                                <div class="delivery-time">
-                                    <img src="/image/group.svg" alt="значок доставка">
-                                    <p>сегодня в 14:00</p>
-                                </div>
-                                <button class="orange-button-cost">3000 ₽</button>
-                            </div>
-                        </article>
-                        <article class="catalog-items-item">
-                            <!-- <div class="picture-product"> -->
-                                <img class="picture-product" src="/image/pic.png" alt="букет цветов розовых">
-                            <!-- </div> -->
-                            <div class="catalog-items-item-container">
-                                <p> Авторский букет из роз, диантусов и сухоцветов</p>
-                                <div class="delivery-time">
-                                    <img src="/image/group.svg" alt="значок доставка">
-                                    <p>сегодня в 14:00</p>
-                                </div>
-                                <button class="orange-button-cost">3000 ₽</button>
-                            </div>
-                        </article>
-                        <article class="catalog-items-item">
-                            <!-- <div class="picture-product"> -->
-                                <img class="picture-product" src="/image/pic.png" alt="букет цветов розовых">
-                            <!-- </div> -->
-                            <div class="catalog-items-item-container">
-                                <p> Авторский букет из роз, диантусов и сухоцветов</p>
-                                <div class="delivery-time">
-                                    <img src="/image/group.svg" alt="значок доставка">
-                                    <p>сегодня в 14:00</p>
-                                </div>
-                                <button class="orange-button-cost">3000 ₽</button>
-                            </div>
-                        </article>
-                        <article class="catalog-items-item">
-                            <!-- <div class="picture-product"> -->
-                                <img class="picture-product" src="/image/pic.png" alt="букет цветов розовых">
-                            <!-- </div> -->
-                            <div class="catalog-items-item-container">
-                                <p> Авторский букет из роз, диантусов и сухоцветов</p>
-                                <div class="delivery-time">
-                                    <img src="/image/group.svg" alt="значок доставка">
-                                    <p>сегодня в 14:00</p>
-                                </div>
-                                <button class="orange-button-cost">3000 ₽</button>
-                            </div>
-                        </article>
-                        <article class="catalog-items-item">
-                            <!-- <div class="picture-product"> -->
-                                <img class="picture-product" src="/image/pic.png" alt="букет цветов розовых">
-                            <!-- </div> -->
-                            <div class="catalog-items-item-container">
-                                <p> Авторский букет из роз, диантусов и сухоцветов</p>
-                                <div class="delivery-time">
-                                    <img src="/image/group.svg" alt="значок доставка">
-                                    <p>сегодня в 14:00</p>
-                                </div>
-                                <button class="orange-button-cost">3000 ₽</button>
-                            </div>
-                        </article>
-                    </section>
-                </section>
-                <section class="basket">
-                </section>
-            </div>
-        </section>
+          </section>
+
+          <section class="basket"></section>
+        </div>
+      </section>
     </main>
     <footer>
-
+      <section class="footer-page">
+        <section class="footer-content">
+            <img src="image/logo.svg" alt="логотип" />
+            <div class="social-network">
+              <p>Mirano@gmail.com</p>
+              <div class="social-network-icons">
+                <img src="/image/telegram.svg" alt="наш телеграм" />
+                <img src="/image/youtube.svg" alt="наш ютуб" />
+                <img src="/image/vkontakte.svg" alt="наш вконтакте" />
+              </div>
+            </div>
+            <p class="developer">
+              Проект сделан в учебных целях <br />Designer: Anastasia Ilina
+              <br />Developer:
+            </p>
+            <p>©MIRANO, 2024</p>
+        </section>
+      </section>
     </footer>
-</body>
-
+  </body>
 </html>

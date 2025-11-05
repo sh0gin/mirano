@@ -1,126 +1,147 @@
 .second__page {
-    padding-top: 73px;
-    width: 90%;
-    margin: 0 auto;
-    font-family: Inter;
-    font-size: 14px;
+  padding-top: 73px;
+  width: 90%;
+  margin: 0 auto;
+  font-family: Inter;
+  font-size: 14px;
 }
 
 .filter {
-    padding-bottom: 32px;
+  margin-bottom: 16px;
 }
 
 .filter-ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px 8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 8px;
 }
 
 .filter-elem {
-    background-color: #ffffff;
-    border-radius: 30px;
-    height: 40px;
-    color: black;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    padding: 8px 12px;
-    gap: 4px;
+  background-color: #ffffff;
+  border-radius: 30px;
+  height: 40px;
+  color: black;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+  gap: 4px;
 }
 
 .filter-elem-active {
-    color: white;
-    background-color: #F0A35B;
+  color: white;
+  background-color: #f0a35b;
 }
 
 .block {
-    background-color: #ffffff;
-    list-style-position: inside;
-    width: 185px;
-    height: 154px;
-    border-radius: 12px;
+  background-color: #ffffff;
+  list-style-position: inside;
+  width: 185px;
+  height: 154px;
+  border-radius: 12px;
 }
 
 .block::marker {
-    float: right;
+  float: right;
 }
 
 .container__details {
-    display: flex;
-    align-content: center;
-    gap: 40px;
+  display: flex;
+  align-content: center;
+  gap: 40px;
 }
 
 .block-content {
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
 }
 
 .block-content-active {
-    color: orange;
+  color: orange;
 }
 
 .block-price {
-    width: 236px;
-    height: 88px;
-    background-color: white;
+  width: 236px;
+  height: 88px;
+  background-color: white;
 }
 
 .block-content-price {
-    padding: 24px;
-    display: flex;
-    gap: 8px;
+  padding: 24px;
+  display: flex;
+  gap: 8px;
 }
 
 .block-content-price input {
-    width: 90px;
+  width: 90px;
+  height: 40px;
+  border-radius: 12px;
+  border: none;
+  background-color: #f5f6f2;
+  padding-left: 16px;
+}
+
+.block-content-price,
+.block-content {
+  margin-top: 16px;
+}
+
+@media (min-width: 768px) {
+
+  .filter-elem {
+    height: 72px;
+    font-size: 18px;
+    padding-right: 10px;
+  }
+
+  .filter-elem img {
+    width: 40px;
     height: 40px;
-    border-radius: 12px;
-    border: none;
-    background-color: #F5F6F2;
-    padding-left: 16px;
+  }
+
+  .container__details {
+    font-size: 18px;
+    display: flex;
+    gap: 64x;
+  }
+
+  .block {
+    width: 244px;
+    height: 210px;
+  }
+
+  .block-content {
+    padding: 24px;
+  }
+
+  .block-price {
+    width: 276px;
+    height: 88px;
+  }
+
+  .block-content-price input {
+    width: 110px;
+    height: 40px;
+    font-size: 18px;
+  }
 }
 
-.block-content-price, .block-content {
-    margin-top: 16px;
+@media (min-width: 1024px) {
+  .block {
+    width: 244px;
+    height: 275px;
+  }
+
+  .second__page {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
-@media(min-width: 768px) {
-    .container__details {
-        font-size: 18px;
-        display: flex;
-        gap: 64x;
-    }
-
-    .block {
-        width: 244px;
-        height: 195px;
-    }
-
-    .block-content {
-        padding: 24px;
-    }
-
-
-    .block-price {
-        width: 276px;
-        height: 88px;
-    }
-
-    .block-content-price input {
-        width: 110px;
-        height: 40px;
-        font-size: 18px;
-    }
-}
-
-@media(min-width: 1024px) {
-    .second__page {
-        padding-top: 60px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+.block-price, .block {
+  position: absolute;
 }

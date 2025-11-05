@@ -1,0 +1,81 @@
+.fourth__page {
+  margin-top: 100px;
+  width: 100%;
+}
+
+.fourth__page-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  font-size: 32px;
+  font-family: PlayfairDisplay;
+  color: #607900;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.input__mail {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.conteiner__input {
+  /* position: relative; */
+  max-height: 40px;
+  justify-self: center;
+  max-width: 524px;
+}
+
+/* .orange__buttun-mail {
+  position: absolute;
+  bottom: 20%;
+} */
+
+.fourth__page-container > p {
+  padding-bottom: 24px;
+}
+
+/* .fourth__page-img {
+  position: relative;
+} */
+
+/* .conteiner__input button {
+  border: none;
+  background: none;
+  position: absolute;
+  right: 2px;
+  top: 9px;
+} */
+
+.conteiner__input button:hover {
+  transition: all 0.3s;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.conteiner__input button:active {
+  transition: all 0.1s;
+  transform: scale(0.7, 0.7);
+}
+
+.orange__buttun-mail {
+  position: absolute;
+  background-image: url("/image/up_arrow.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f0a35b;
+  width: 40px;
+  height: 40px;
+  border-radius: 32px;
+  right: 0;
+  top: 0;
+}
+
+@media (min-width: 1024px) {
+  .fourth__page-container {
+    font-size: 50px;
+  }
+}
