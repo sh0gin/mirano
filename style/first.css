@@ -3,12 +3,14 @@
     font-family: PlayfairDisplay;
     font-weight: 400;
     margin: 0 auto;
+
 }
 
 .first__page h1{
     text-align: center;
     font-size: 2.5rem;
     color: #607900;
+    line-height: 100%;
 }
 
 .first__page p {
@@ -25,4 +27,13 @@
     background-size: contain;
     background-repeat: no-repeat;
     /* width: 100%; */
+}
+
+.delivery-time img {
+    width: 16px;
+    height: 16px;
+}
+
+.delivery-time {
+    font-size: 12px;
 }
