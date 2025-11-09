@@ -64,6 +64,7 @@
 .orange__buttun-mail {
   position: absolute;
   background-image: url("/image/up_arrow.svg");
+  transform: rotate(270deg);
   background-repeat: no-repeat;
   background-position: center;
   background-color: #f0a35b;

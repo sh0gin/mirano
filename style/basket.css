@@ -1,0 +1,68 @@
+.basket {
+    flex-basis: 400px;
+    position: relative;
+    left: -60px;
+    top: -185px;
+    font-size: 14px;
+}
+
+.basket-section {
+    width: 310px;
+    height: 778px;
+    background-color: white;
+    border-radius: 32px;
+}
+.basket-container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.our-order {
+    padding-top: 24px;
+    padding-bottom: 8px;
+    font-size: 28px;
+}
+
+.delivery-time-basket {
+    padding-bottom: 32px;
+}
+
+.min-image img {
+    width: 54px;
+    height: 54px;
+    border-radius: 12px;
+}
+/* элементы корзины */
+.item-basket {
+    display: flex;
+    gap: 12px;
+    padding-bottom: 33px;
+}
+
+.count-cost {
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button-append {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.button-basket {
+    background-color: #F5F6F2;
+    border-radius: 6px;
+    border: none;
+    width: 29px;
+    height: 29px;
+}
+
+.final-sub-buttom-order {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: absolute; */
+}
