@@ -49,6 +49,7 @@
   display: flex;
   align-content: center;
   gap: 40px;
+  position: relative;
 }
 
 .block-content {
@@ -83,9 +84,15 @@
   padding-left: 16px;
 }
 
-.block-content-price,
+/* .block-content-price,
 .block-content {
   margin-top: 16px;
+} */
+
+.block-price,
+.block {
+  position: absolute;
+  top: 25px;
 }
 
 @media (min-width: 768px) {
@@ -129,6 +136,12 @@
 }
 
 @media (min-width: 1024px) {
+
+  .block-price,
+  .block {
+    left:  -35px;    
+  }
+
   .block {
     width: 244px;
     height: 275px;
@@ -140,8 +153,4 @@
     justify-content: space-between;
     align-items: center;
   }
-}
-
-.block-price, .block {
-  position: absolute;
 }
